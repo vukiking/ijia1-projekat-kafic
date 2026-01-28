@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt Forma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="about.html">O nama</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+        </ul>
+    </nav>
+    <section class="content">
+        <h2>Kontakt</h2>
+        <p>Ukoliko imate pitanja ili sugestije, slobodno nas kontaktirajte putem forme.</p>
+        <form action="#" method="post">
+            <input type="text" name="ime" placeholder="Ime" required minlength="2">
+            <input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <textarea name="poruka" placeholder="Poruka" required minlength="10"></textarea>
+
+            <label for="tema">Tema poruke:</label>
+            <select name="tema" id="tema" required>
+                <option value="">Izaberite temu</option>
+                <option value="pohvala">Pohvala</option>
+                <option value="pitanje">Pitanje</option>
+                <option value="zalba">Žalba</option>
+            </select>
+
+            <button type="submit">Pošalji</button>
+        </form>
+    </section>
+
+</body>
+</html>
